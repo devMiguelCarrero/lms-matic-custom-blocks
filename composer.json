@@ -1,0 +1,37 @@
+{
+    "name": "devmiguelcarrero/lms-matic-custom-blocks",
+    "type": "wordpress-theme",
+    "description": "Wordpress plugin made to manage custom Gutenberg blocks for LMS-Matic Wordpress Theme.",
+    "keywords": [
+        "WordPress",
+        "Themes",
+        "LMS"
+    ],
+    "homepage": "https://github.com/Automattic/_s",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Contributors",
+            "homepage": "https://github.com/Automattic/_s/graphs/contributors"
+        }
+    ],
+    "require": {
+        "php": ">=5.6"
+    },
+    "require-dev": {
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
+        "wptrt/wpthemereview": "^0.2.1",
+        "php-parallel-lint/php-parallel-lint": "^1.2.0",
+        "wp-cli/i18n-command": "^2.2.5"
+    },
+    "scripts": {
+        "lint:wpcs": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcs",
+        "lint:php": "@php ./vendor/bin/parallel-lint --exclude .git --exclude vendor .",
+        "make-pot": "wp i18n make-pot ./ languages/lms-matic-custom-blocks.pot --exclude=\"src\"",
+        "make-json": "wp i18n make-json languages/lms-matic-custom-blocks-es_CO.po --no-purge"
+    },
+    "support": {
+        "issues": "https://github.com/Automattic/_s/issues",
+        "source": "https://github.com/Automattic/_s"
+    }
+}
