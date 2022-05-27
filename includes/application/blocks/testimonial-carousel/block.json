@@ -1,0 +1,19 @@
+{
+	"apiVersion": 2,
+	"name": "lms-matic-custom-blocks/testimonial-carousel",
+	"title": "Testimonial Carousel",
+	"category": "widgets",
+	"icon": "admin-post",
+	"description": "Display testimonials on Slick based Carousel",
+	"keywords": ["testimonial", "post", "list", "carousel"],
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"numberOfPosts": {
+			"type": "number",
+			"default": 3
+		}
+	},
+	"textdomain": "testimonial-carousel"
+}

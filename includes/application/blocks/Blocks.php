@@ -10,6 +10,7 @@
             register_block_type_from_metadata( LMSCB_BLOCKS_PATH . 'section-inner' );
             register_block_type_from_metadata( LMSCB_BLOCKS_PATH . 'section-container' );
             register_block_type_from_metadata( LMSCB_BLOCKS_PATH . 'section-title' );
+            register_block_type_from_metadata( LMSCB_BLOCKS_PATH . 'testimonial-carousel' );
         }
 
         public static function instance() {
