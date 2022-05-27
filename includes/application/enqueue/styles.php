@@ -18,6 +18,14 @@
 
             $enqueue = new LMSCB_EnqueueBuilder();
             $enqueue->setType('style')
+                    ->setName( LMSCB_TEXTDOMAIN . '-editor-front-style' )
+                    ->setPath( LMSCB_BUILD_URL . 'style-editor.css' )
+                    ->setVer($this->script_assets['version'])
+                    ->setMedia('all')
+                    ->enqueue();
+
+            $enqueue = new LMSCB_EnqueueBuilder();
+            $enqueue->setType('style')
 					->setName( LMSCB_TEXTDOMAIN . '-editor-style' )
 					->setPath( LMSCB_BUILD_URL . 'editor.css' )
 					->setVer($this->editor_assets['version'])
@@ -43,16 +51,16 @@
 
             $enqueue = new LMSCB_EnqueueBuilder();
             $enqueue->setType('style')
-                    ->setName( LMSCB_TEXTDOMAIN . '-style' )
-                    ->setPath( LMSCB_BUILD_URL . 'style-script.css' )
+                    ->setName( LMSCB_TEXTDOMAIN . '-editor-front-style' )
+                    ->setPath( LMSCB_BUILD_URL . 'style-editor.css' )
                     ->setVer($this->script_assets['version'])
                     ->setMedia('all')
                     ->enqueue();
 
             $enqueue = new LMSCB_EnqueueBuilder();
             $enqueue->setType('style')
-                    ->setName( LMSCB_TEXTDOMAIN . '-editor-front-style' )
-                    ->setPath( LMSCB_BUILD_URL . 'style-editor.css' )
+                    ->setName( LMSCB_TEXTDOMAIN . '-style' )
+                    ->setPath( LMSCB_BUILD_URL . 'style-script.css' )
                     ->setVer($this->script_assets['version'])
                     ->setMedia('all')
                     ->enqueue();

@@ -1,0 +1,25 @@
+{
+	"apiVersion": 2,
+	"name": "lms-matic-custom-blocks/section-title",
+	"title": "Section Title",
+	"category": "widgets",
+	"icon": "admin-post",
+	"description": "Section Title Container for LMS Matic Custom Blocks",
+	"keywords": ["section", "title", "container"],
+	"supports": {
+		"html": false,
+		"color": {
+			"gradients": true,
+			"background": true,
+			"text": true
+		}
+	},
+	"attributes": {
+		"title": {
+			"type": "string",
+			"source": "html",
+			"selector": "h2"
+		}
+	},
+	"textdomain": "title-section"
+}

@@ -2,27 +2,40 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/blocks/test-block-1/script.js":
-/*!*******************************************!*\
-  !*** ./src/blocks/test-block-1/script.js ***!
-  \*******************************************/
+/***/ "./src/blocks/section-container/script.js":
+/*!************************************************!*\
+  !*** ./src/blocks/section-container/script.js ***!
+  \************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.scss */ "./src/blocks/test-block-1/style.scss");
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.scss */ "./src/blocks/section-container/style.scss");
 
 console.log('write here your front end app');
 
 /***/ }),
 
-/***/ "./src/blocks/test-block-2/script.js":
-/*!*******************************************!*\
-  !*** ./src/blocks/test-block-2/script.js ***!
-  \*******************************************/
+/***/ "./src/blocks/section-inner/script.js":
+/*!********************************************!*\
+  !*** ./src/blocks/section-inner/script.js ***!
+  \********************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.scss */ "./src/blocks/test-block-2/style.scss");
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.scss */ "./src/blocks/section-inner/style.scss");
+
+console.log('write here the front end script');
+
+/***/ }),
+
+/***/ "./src/blocks/section-title/script.js":
+/*!********************************************!*\
+  !*** ./src/blocks/section-title/script.js ***!
+  \********************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.scss */ "./src/blocks/section-title/style.scss");
 
 console.log('write here the front end script');
 
@@ -36,18 +49,20 @@ console.log('write here the front end script');
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _sass_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sass/style.scss */ "./src/sass/style.scss");
-/* harmony import */ var _blocks_test_block_1_script__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./blocks/test-block-1/script */ "./src/blocks/test-block-1/script.js");
-/* harmony import */ var _blocks_test_block_2_script__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./blocks/test-block-2/script */ "./src/blocks/test-block-2/script.js");
+/* harmony import */ var _blocks_section_container_script__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./blocks/section-container/script */ "./src/blocks/section-container/script.js");
+/* harmony import */ var _blocks_section_inner_script__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./blocks/section-inner/script */ "./src/blocks/section-inner/script.js");
+/* harmony import */ var _blocks_section_title_script__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./blocks/section-title/script */ "./src/blocks/section-title/script.js");
+
 
 
 
 
 /***/ }),
 
-/***/ "./src/blocks/test-block-1/style.scss":
-/*!********************************************!*\
-  !*** ./src/blocks/test-block-1/style.scss ***!
-  \********************************************/
+/***/ "./src/blocks/section-container/style.scss":
+/*!*************************************************!*\
+  !*** ./src/blocks/section-container/style.scss ***!
+  \*************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
@@ -56,10 +71,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/blocks/test-block-2/style.scss":
-/*!********************************************!*\
-  !*** ./src/blocks/test-block-2/style.scss ***!
-  \********************************************/
+/***/ "./src/blocks/section-inner/style.scss":
+/*!*********************************************!*\
+  !*** ./src/blocks/section-inner/style.scss ***!
+  \*********************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./src/blocks/section-title/style.scss":
+/*!*********************************************!*\
+  !*** ./src/blocks/section-title/style.scss ***!
+  \*********************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);

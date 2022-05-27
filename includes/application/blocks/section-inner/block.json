@@ -1,0 +1,25 @@
+{
+	"apiVersion": 2,
+	"name": "lms-matic-custom-blocks/section-inner",
+	"title": "Section Inner",
+	"category": "widgets",
+	"icon": "admin-post",
+	"description": "Section inner Container for LMS Matic Custom Blocks",
+	"keywords": ["section", "inner", "container"],
+	"supports": {
+		"html": false
+	},
+	"styles": [
+		{
+			"name": "compact-width",
+			"label": "Compact width",
+			"isDefault": true
+		},
+		{
+			"name": "full-width",
+			"label": "Full Width",
+			"isDefault": true
+		}
+	],
+	"textdomain": "section-inner"
+}

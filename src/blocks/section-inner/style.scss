@@ -1,0 +1,21 @@
+.lms-section {
+	&__inner {
+		position: relative;
+		display: block;
+		z-index: 5;
+		width: 100%;
+		max-width: 1275px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 20px;
+		padding-right: 20px;
+
+		&:not(:last-child) {
+			margin-bottom: 4rem;
+		}
+
+		&.is-style-full-width {
+			max-width: 100%;
+		}
+	}
+}

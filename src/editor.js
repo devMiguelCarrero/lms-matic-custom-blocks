@@ -1,2 +1,3 @@
-import './blocks/test-block-1';
-import './blocks/test-block-2';
+import './blocks/section-container';
+import './blocks/section-inner';
+import './blocks/section-title';

@@ -4,10 +4,10 @@ import { textDomain, Colors } from '../../block-data/block-data';
 import Edit from './Edit.js';
 import Save from './Save.js';
 
-registerBlockType(`${textDomain}/test-block-1`, {
+registerBlockType(`${textDomain}/section-inner`, {
 	icon: {
-		background: Colors.white,
-		foreground: Colors.main,
+		background: Colors.main,
+		foreground: Colors.secondary,
 		src: (
 			<svg
 				xmlns="http://www.w3.org/2000/svg"

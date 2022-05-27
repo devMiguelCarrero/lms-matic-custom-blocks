@@ -1,3 +1,4 @@
 import './sass/style.scss';
-import './blocks/test-block-1/script';
-import './blocks/test-block-2/script';
+import './blocks/section-container/script';
+import './blocks/section-inner/script';
+import './blocks/section-title/script';

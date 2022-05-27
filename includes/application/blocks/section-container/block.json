@@ -1,0 +1,19 @@
+{
+	"apiVersion": 2,
+	"name": "lms-matic-custom-blocks/section-container",
+	"title": "Section Container",
+	"category": "widgets",
+	"icon": "admin-post",
+	"description": "Section Container for LMS Matic Custom Blocks",
+	"keywords": ["section", "container","LMS"],
+	"supports": {
+		"html": false,
+		"color": {
+			"gradients": false,
+			"background": false,
+			"icon": true,
+			"text": true
+		}
+	},
+	"textdomain": "section-container"
+}

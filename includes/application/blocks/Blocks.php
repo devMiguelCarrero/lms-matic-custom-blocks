@@ -7,8 +7,9 @@
         }
 
         public function register() {
-            register_block_type_from_metadata( LMSCB_BLOCKS_PATH . 'test-block-1' );
-            register_block_type_from_metadata( LMSCB_BLOCKS_PATH . 'test-block-2' );
+            register_block_type_from_metadata( LMSCB_BLOCKS_PATH . 'section-inner' );
+            register_block_type_from_metadata( LMSCB_BLOCKS_PATH . 'section-container' );
+            register_block_type_from_metadata( LMSCB_BLOCKS_PATH . 'section-title' );
         }
 
         public static function instance() {

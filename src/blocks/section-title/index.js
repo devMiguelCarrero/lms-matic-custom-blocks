@@ -4,20 +4,20 @@ import { textDomain, Colors } from '../../block-data/block-data';
 import Edit from './Edit.js';
 import Save from './Save.js';
 
-registerBlockType(`${textDomain}/test-block-2`, {
+registerBlockType(`${textDomain}/section-title`, {
 	icon: {
-		background: Colors.white,
-		foreground: Colors.main,
+		background: Colors.main,
+		foreground: Colors.secondary,
 		src: (
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
-				enable-background="new 0 0 24 24"
 				height="24px"
 				viewBox="0 0 24 24"
 				width="24px"
+				fill="#000000"
 			>
-				<rect fill="none" height="24" width="24" />
-				<path d="M3,3v8h8V3H3z M9,9H5V5h4V9z M3,13v8h8v-8H3z M9,19H5v-4h4V19z M13,3v8h8V3H13z M19,9h-4V5h4V9z M13,13v8h8v-8H13z M19,19h-4v-4h4V19z" />
+				<path d="M0 0h24v24H0V0z" fill="none" />
+				<path d="M5 4v3h5.5v12h3V7H19V4H5z" />
 			</svg>
 		),
 	},

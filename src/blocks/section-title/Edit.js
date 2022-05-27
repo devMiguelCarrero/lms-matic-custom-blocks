@@ -5,11 +5,11 @@ import { __ } from '@wordpress/i18n';
 import { textDomain } from '../../block-data/block-data';
 import classNames from 'classnames';
 
-const EditTestBlock2 = (props) => {
+const EditSectionTitle = (props) => {
 	const { attributes, setAttributes } = props;
 	const { className, title } = attributes;
 	const classes = classNames(className, {
-		'gutenberg-multiblock-boilerplate-test-block-2': true,
+		'lms-section-title-area': true,
 	});
 
 	const onChangeTitle = (title) => {
@@ -23,21 +23,14 @@ const EditTestBlock2 = (props) => {
 	return (
 		<div {...blockProps}>
 			<RichText
+				className="lms-section-title-area__title"
 				tagName="h2"
 				onChange={onChangeTitle}
 				value={title}
-				placeholder={__(
-					'Gutenberg Boilerplate Editable Title',
-					textDomain
-				)}
+				placeholder={__('Section Title', textDomain)}
 				formattingControl={['bold', 'italic']}
 			/>
-			<p>
-				{__(
-					'just another boilerplate test block but with an editable title'
-				)}
-			</p>
 		</div>
 	);
 };
-export default EditTestBlock2;
+export default EditSectionTitle;
