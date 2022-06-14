@@ -11,6 +11,9 @@
             register_block_type_from_metadata( LMSCB_BLOCKS_PATH . 'section-container' );
             register_block_type_from_metadata( LMSCB_BLOCKS_PATH . 'section-title' );
             register_block_type_from_metadata( LMSCB_BLOCKS_PATH . 'testimonial-carousel' );
+            register_block_type_from_metadata( LMSCB_BLOCKS_PATH . 'tutoring-list' );
+            register_block_type_from_metadata( LMSCB_BLOCKS_PATH . 'call-to-action-list' );
+            register_block_type_from_metadata( LMSCB_BLOCKS_PATH . 'simple-call-to-action' );
         }
 
         public static function instance() {

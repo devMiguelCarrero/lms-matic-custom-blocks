@@ -2,4 +2,11 @@
 	padding-top: 3.5rem;
 	padding-bottom: 3.5rem;
 	display: block;
+	&__inner {
+		> * {
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
 }

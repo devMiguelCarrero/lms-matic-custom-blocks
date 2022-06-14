@@ -5,7 +5,6 @@ import { PanelBody, QueryControls } from '@wordpress/components';
 import LogoLoader from '../../components/loaders/LogoLoader';
 import { useSelect } from '@wordpress/data';
 import { textDomain, Colors } from '../../block-data/block-data';
-import Slider from 'react-slick';
 import classNames from 'classnames';
 
 const EditPostCarousel = (props) => {
@@ -13,7 +12,7 @@ const EditPostCarousel = (props) => {
 	const { className, numberOfPosts } = attributes;
 
 	const classes = classNames(className, {
-		'lms-post-carousel': true,
+		'lms-tutoring-grid': true,
 	});
 
 	const blockProps = useBlockProps({
@@ -26,7 +25,7 @@ const EditPostCarousel = (props) => {
 
 	const posts = useSelect(
 		(select) => {
-			return select('core').getEntityRecords('postType', 'testimonial', {
+			return select('core').getEntityRecords('postType', 'tutoring', {
 				per_page: numberOfPosts,
 				_embed: true,
 			});
@@ -34,17 +33,8 @@ const EditPostCarousel = (props) => {
 		[numberOfPosts]
 	);
 
-	const settings = {
-		dots: true,
-		infinite: true,
-		speed: 500,
-		fade: true,
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		autoplay: false,
-		autoplaySpeed: 4000,
-		adaptiveHeight: true,
-	};
+	console.log(posts);
+
 	return (
 		<>
 			<InspectorControls>
@@ -59,22 +49,28 @@ const EditPostCarousel = (props) => {
 			</InspectorControls>
 			<div {...blockProps}>
 				{posts ? (
-					<Slider {...settings}>
+					<div className="row">
 						{posts.map((post) => {
 							return (
-								<div className="carousel-post-container">
-									<p>
-										{post.content.rendered.replace(
-											/(<([^>]+)>)/gi,
-											''
-										)}
-									</p>
+								<div className="col-6 col-md-3">
+									<div className="lms-tutoring-grid__front-layer">
+										<h3 className="lms-tutoring-grid__front-layer__title">
+											{post.meta['tutoring-short-title']}{' '}
+											<span className="title-complement">
+												{
+													post.meta[
+														'tutoring-short-title-complement'
+													]
+												}
+											</span>
+										</h3>
+									</div>
 								</div>
 							);
 						})}
-					</Slider>
+					</div>
 				) : (
-					<div className="lms-post-carousel__loader">
+					<div className="lms-tutoring-grid__loader">
 						<LogoLoader />
 					</div>
 				)}

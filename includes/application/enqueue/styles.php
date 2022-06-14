@@ -22,9 +22,9 @@ class LMSCB_Enqueue_styles
 
         $enqueue = new LMSCB_EnqueueBuilder();
         $enqueue->setType('style')
-            ->setName(LMSCB_TEXTDOMAIN . '-editor-front-style')
-            ->setPath(LMSCB_BUILD_URL . 'style-editor.css')
-            ->setVer($this->script_assets['version'])
+            ->setName(LMSCB_TEXTDOMAIN . '-script-main-style')
+            ->setPath(LMSCB_BUILD_URL . 'script.css')
+            ->setVer($this->editor_assets['version'])
             ->setMedia('all')
             ->enqueue();
 
@@ -38,9 +38,9 @@ class LMSCB_Enqueue_styles
 
         $enqueue = new LMSCB_EnqueueBuilder();
         $enqueue->setType('style')
-            ->setName(LMSCB_TEXTDOMAIN . '-script-main-style')
-            ->setPath(LMSCB_BUILD_URL . 'script.css')
-            ->setVer($this->editor_assets['version'])
+            ->setName(LMSCB_TEXTDOMAIN . '-editor-front-style')
+            ->setPath(LMSCB_BUILD_URL . 'style-editor.css')
+            ->setVer($this->script_assets['version'])
             ->setMedia('all')
             ->enqueue();
     }

@@ -16,7 +16,6 @@ const ezPostCarousel = ({ postData }) => {
 			);
 			console.log(response.data);
 			setPosts(response.data);
-			props.onLessonsLoad(response.data);
 		} catch (error) {
 			console.log(error);
 		}

@@ -1,0 +1,19 @@
+{
+	"apiVersion": 2,
+	"name": "lms-matic-custom-blocks/tutoring-list",
+	"title": "Tutoring List",
+	"category": "widgets",
+	"icon": "admin-post",
+	"description": "Display tutorings on Grid",
+	"keywords": ["lessons", "tutoring", "list","grid"],
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"numberOfPosts": {
+			"type": "number",
+			"default": 4
+		}
+	},
+	"textdomain": "tutoring-list"
+}

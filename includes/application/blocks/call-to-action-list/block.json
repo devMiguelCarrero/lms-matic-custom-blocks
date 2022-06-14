@@ -1,0 +1,35 @@
+{
+	"apiVersion": 2,
+	"name": "lms-matic-custom-blocks/call-to-action-list",
+	"title": "Call to action list",
+	"category": "widgets",
+	"icon": "admin-post",
+	"description": "Call to action with an editable richtext list",
+	"keywords": ["call", "to", "action", "list", "title", "banner"],
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"title": {
+			"type": "string",
+			"source": "html",
+			"selector": "h2"
+		},
+		"firstText": {
+			"type": "string",
+			"source": "html",
+			"selector": "li"
+		},
+		"secondText": {
+			"type": "string",
+			"source": "html",
+			"selector": "li"
+		},
+		"thirdText": {
+			"type": "string",
+			"source": "html",
+			"selector": "li"
+		}
+	},
+	"textdomain": "call-to-action-list"
+}

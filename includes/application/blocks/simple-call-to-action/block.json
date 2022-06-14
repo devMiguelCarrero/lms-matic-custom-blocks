@@ -1,0 +1,27 @@
+{
+	"apiVersion": 2,
+	"name": "lms-matic-custom-blocks/simple-call-to-action",
+	"title": "Banner Simple Call to Action",
+	"category": "widgets",
+	"icon": "admin-post",
+	"description": "Call to action with complementary title",
+	"keywords": ["call", "to", "action", "list", "title", "banner"],
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"title": {
+			"type": "string",
+			"source": "html",
+			"selector": "span.lms-simple-call-to-action__title__main",
+			"default": "Write your title"
+		},
+		"complementaryTitle": {
+			"type": "string",
+			"source": "html",
+			"selector": "span.lms-simple-call-to-action__title__complement",
+			"default": "Write your complementary title"
+		}
+	},
+	"textdomain": "simple-call-to-action"
+}

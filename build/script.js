@@ -2488,6 +2488,19 @@ const URLs = LMSCB_URLs != undefined ? LMSCB_URLs : {};
 
 /***/ }),
 
+/***/ "./src/blocks/call-to-action-list/script.js":
+/*!**************************************************!*\
+  !*** ./src/blocks/call-to-action-list/script.js ***!
+  \**************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.scss */ "./src/blocks/call-to-action-list/style.scss");
+
+
+/***/ }),
+
 /***/ "./src/blocks/section-container/script.js":
 /*!************************************************!*\
   !*** ./src/blocks/section-container/script.js ***!
@@ -2527,6 +2540,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.scss */ "./src/blocks/section-title/style.scss");
 
 console.log('write here the front end script');
+
+/***/ }),
+
+/***/ "./src/blocks/simple-call-to-action/script.js":
+/*!****************************************************!*\
+  !*** ./src/blocks/simple-call-to-action/script.js ***!
+  \****************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.scss */ "./src/blocks/simple-call-to-action/style.scss");
+
 
 /***/ }),
 
@@ -2593,7 +2619,6 @@ const ezPostCarousel = _ref => {
       const response = await axios__WEBPACK_IMPORTED_MODULE_3___default().get(`${_block_data_block_data__WEBPACK_IMPORTED_MODULE_4__.URLs.main_url}wp-json/wp/v2/testimonial?per_page=${postData.numberOfPosts}&_embed`);
       console.log(response.data);
       setPosts(response.data);
-      props.onLessonsLoad(response.data);
     } catch (error) {
       console.log(error);
     }
@@ -2647,7 +2672,123 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-jquery__WEBPACK_IMPORTED_MODULE_3___default()('body .ez-esports-post-carousel').each(function (Index, el) {
+jquery__WEBPACK_IMPORTED_MODULE_3___default()('body .lms-post-carousel').each(function (Index, el) {
+  (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.render)((0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_App_js__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    dataPosts: jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).data('posts')
+  }), this);
+});
+
+/***/ }),
+
+/***/ "./src/blocks/tutoring-list/App.js":
+/*!*****************************************!*\
+  !*** ./src/blocks/tutoring-list/App.js ***!
+  \*****************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_list_TutoringList__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/list/TutoringList */ "./src/blocks/tutoring-list/components/list/TutoringList.js");
+
+
+
+const PostCarouselApp = _ref => {
+  let {
+    dataPosts
+  } = _ref;
+  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_components_list_TutoringList__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    postData: dataPosts
+  });
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (PostCarouselApp);
+
+/***/ }),
+
+/***/ "./src/blocks/tutoring-list/components/list/TutoringList.js":
+/*!******************************************************************!*\
+  !*** ./src/blocks/tutoring-list/components/list/TutoringList.js ***!
+  \******************************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var slick_carousel_slick_slick_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! slick-carousel/slick/slick.css */ "./node_modules/slick-carousel/slick/slick.css");
+/* harmony import */ var slick_carousel_slick_slick_theme_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! slick-carousel/slick/slick-theme.css */ "./node_modules/slick-carousel/slick/slick-theme.css");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _block_data_block_data__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../block-data/block-data */ "./src/block-data/block-data.js");
+/* harmony import */ var react_slick__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-slick */ "./node_modules/react-slick/lib/index.js");
+/* harmony import */ var _components_loaders_LogoLoader__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../../components/loaders/LogoLoader */ "./src/components/loaders/LogoLoader.js");
+
+
+
+
+
+
+
+
+
+const ezTutotingList = _ref => {
+  let {
+    postData
+  } = _ref;
+  const [posts, setPosts] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+  (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useEffect)(async () => {
+    try {
+      const response = await axios__WEBPACK_IMPORTED_MODULE_3___default().get(`${_block_data_block_data__WEBPACK_IMPORTED_MODULE_4__.URLs.main_url}wp-json/wp/v2/tutoring?per_page=${postData.numberOfPosts}&_embed`);
+      setPosts(response.data);
+    } catch (error) {
+      console.log(error);
+    }
+  }, [setPosts]);
+  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, posts ? (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "row"
+  }, posts.map(post => {
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+      className: "col-6 col-md-3"
+    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+      className: "lms-tutoring-grid__front-layer"
+    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
+      className: "lms-tutoring-grid__front-layer__title"
+    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
+      href: post.link
+    }, post.meta['tutoring-short-title'], ' ', (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
+      className: "title-complement"
+    }, post.meta['tutoring-short-title-complement'])))));
+  })) : (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "lms-tutoring-grid__loader"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_components_loaders_LogoLoader__WEBPACK_IMPORTED_MODULE_6__["default"], null)));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (ezTutotingList);
+
+/***/ }),
+
+/***/ "./src/blocks/tutoring-list/script.js":
+/*!********************************************!*\
+  !*** ./src/blocks/tutoring-list/script.js ***!
+  \********************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.scss */ "./src/blocks/tutoring-list/style.scss");
+/* harmony import */ var _App_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./App.js */ "./src/blocks/tutoring-list/App.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! jquery */ "jquery");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_3__);
+
+
+
+
+
+jquery__WEBPACK_IMPORTED_MODULE_3___default()('body .lms-tutoring-grid').each(function (Index, el) {
   (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.render)((0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_App_js__WEBPACK_IMPORTED_MODULE_2__["default"], {
     dataPosts: jquery__WEBPACK_IMPORTED_MODULE_3___default()(this).data('posts')
   }), this);
@@ -2700,7 +2841,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _blocks_section_container_script__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./blocks/section-container/script */ "./src/blocks/section-container/script.js");
 /* harmony import */ var _blocks_section_inner_script__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./blocks/section-inner/script */ "./src/blocks/section-inner/script.js");
 /* harmony import */ var _blocks_section_title_script__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./blocks/section-title/script */ "./src/blocks/section-title/script.js");
-/* harmony import */ var _blocks_testimonial_carousel_script__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./blocks/testimonial-carousel/script */ "./src/blocks/testimonial-carousel/script.js");
+/* harmony import */ var _blocks_tutoring_list_script__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./blocks/tutoring-list/script */ "./src/blocks/tutoring-list/script.js");
+/* harmony import */ var _blocks_testimonial_carousel_script__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./blocks/testimonial-carousel/script */ "./src/blocks/testimonial-carousel/script.js");
+/* harmony import */ var _blocks_call_to_action_list_script__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./blocks/call-to-action-list/script */ "./src/blocks/call-to-action-list/script.js");
+/* harmony import */ var _blocks_simple_call_to_action_script__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./blocks/simple-call-to-action/script */ "./src/blocks/simple-call-to-action/script.js");
+
+
+
 
 
 
@@ -3597,6 +3744,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/blocks/call-to-action-list/style.scss":
+/*!***************************************************!*\
+  !*** ./src/blocks/call-to-action-list/style.scss ***!
+  \***************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
 /***/ "./src/blocks/section-container/style.scss":
 /*!*************************************************!*\
   !*** ./src/blocks/section-container/style.scss ***!
@@ -3636,10 +3796,36 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/blocks/simple-call-to-action/style.scss":
+/*!*****************************************************!*\
+  !*** ./src/blocks/simple-call-to-action/style.scss ***!
+  \*****************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
 /***/ "./src/blocks/testimonial-carousel/style.scss":
 /*!****************************************************!*\
   !*** ./src/blocks/testimonial-carousel/style.scss ***!
   \****************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./src/blocks/tutoring-list/style.scss":
+/*!*********************************************!*\
+  !*** ./src/blocks/tutoring-list/style.scss ***!
+  \*********************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

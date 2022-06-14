@@ -66,6 +66,83 @@
 .lms-section-title-area.has-white-text-color {
   color: var(--site-light-color);
 }
+/*!************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/blocks/tutoring-list/style.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************/
+.lms-tutoring-grid .lms-tutoring-grid__front-layer {
+  padding: 15px;
+  min-height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 0 25px;
+  border: solid 1px transparent;
+  transition: border var(--transition-behavior);
+}
+.lms-tutoring-grid .lms-tutoring-grid__front-layer:hover {
+  border: solid 1px var(--site-main-color);
+}
+.lms-tutoring-grid .lms-tutoring-grid__front-layer .lms-tutoring-grid__front-layer__title {
+  font-family: var(--font-call-to-action);
+  font-weight: var(--jumbo-weight);
+  color: var(--site-third-color);
+  text-transform: uppercase;
+  text-align: center;
+}
+.lms-tutoring-grid .lms-tutoring-grid__front-layer .lms-tutoring-grid__front-layer__title a {
+  color: var(--site-third-color);
+}
+.lms-tutoring-grid .lms-tutoring-grid__front-layer .lms-tutoring-grid__front-layer__title a:hover {
+  color: var(--site-hover-color);
+}
+.lms-tutoring-grid .lms-tutoring-grid__front-layer .lms-tutoring-grid__front-layer__title:before {
+  content: "";
+  display: block;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%27550 560 100 80%27 xml:space=%27preserve%27%3E%3Cpath fill=%27none%27 stroke=%27rgb%28252,170,58%29%27 stroke-width=%273%27 stroke-miterlimit=%2710%27 d=%27M554.9 569.6h90.2L600 634.4z%27/%3E%3C/svg%3E");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.lms-tutoring-grid .lms-tutoring-grid__front-layer .lms-tutoring-grid__front-layer__title .title-complement {
+  display: block;
+  font-weight: var(--subtitles-weight);
+  font-size: 0.5em;
+  color: var(--site-dark-color);
+}
+.lms-tutoring-grid .row {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: -15px;
+  margin-right: -15px;
+  justify-content: center;
+}
+.lms-tutoring-grid .row .col-6 {
+  flex: 0 0 auto;
+  width: 25%;
+}
+@media (max-width: 991px) {
+  .lms-tutoring-grid .row .col-6 {
+    width: 50%;
+  }
+}
+.lms-tutoring-grid__loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  background-color: var(--black-tone);
+}
+.lms-tutoring-grid__loader svg {
+  width: 50px;
+  height: 50px;
+  -webkit-animation: zoom 1s infinite linear;
+          animation: zoom 1s infinite linear;
+}
 /*!*******************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/blocks/testimonial-carousel/style.scss ***!
   \*******************************************************************************************************************************************************************************************************************************************************************/
@@ -188,6 +265,105 @@
 }
 .carousel-post-container p {
   text-align: center;
+}
+/*!******************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/blocks/call-to-action-list/style.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************/
+.lms-jumbo-call-to-action__title {
+  text-align: right;
+  text-transform: uppercase;
+  font-family: var(--font-call-to-action);
+  font-weight: var(--jumbo-weight);
+  font-size: 3.5rem;
+  color: var(--site-third-color);
+}
+@media (max-width: 992px) {
+  .lms-jumbo-call-to-action__title {
+    text-align: center;
+  }
+}
+.lms-jumbo-call-to-action__list {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-call-to-action);
+  margin-left: 3rem;
+}
+.lms-jumbo-call-to-action__list li {
+  list-style-type: none;
+  text-transform: uppercase;
+}
+.lms-jumbo-call-to-action__list li:nth-child(1) {
+  margin-left: calc(-0rem + 4px);
+}
+.lms-jumbo-call-to-action__list li:nth-child(2) {
+  margin-left: calc(-1rem + 4px);
+}
+.lms-jumbo-call-to-action__list li:nth-child(3) {
+  margin-left: calc(-2rem + 4px);
+}
+.lms-jumbo-call-to-action__list li:nth-child(4) {
+  margin-left: calc(-3rem + 4px);
+}
+.lms-jumbo-call-to-action__list li:nth-child(5) {
+  margin-left: calc(-4rem + 4px);
+}
+.lms-jumbo-call-to-action__list:before {
+  content: "";
+  height: calc(100% + (3rem * 2));
+  width: 3rem;
+  position: absolute;
+  top: calc(0% - 3rem);
+  left: -3rem;
+  background-image: url("data:image/svg+xml;utf8,<?xml%20version=%221.0%22%20encoding=%22UTF-8%22%20?%3E%3Csvg%20version=%221.1%22%20xmlns=%22http://www.w3.org/2000/svg%22%20xmlns:xlink=%22http://www.w3.org/1999/xlink%22%20x=%220px%22%20y=%220px%22%20viewBox=%22548.8%20550%2054%20100%22%20enable-background=%22new%20548.8%20550%2054%20100%22%20xml:space=%22preserve%22%3E%3Cpath%20d=%22M601.8,553.4c-3.7,8.3-7.7,16.4-11.8,24.5c-4,8.1-8.3,16.1-12.5,24.1l-6.5,11.9c-2.2,3.9-4.3,8-6.6,11.9%20c-4.4,7.8-9,15.7-13.8,23.3c3.7-8.3,7.7-16.4,11.8-24.5c2-4,4.1-8.1,6.2-12.1l6.3-12c4.3-8,8.6-15.9,13.1-23.7%20C592.5,569,597,561.1,601.8,553.4L601.8,553.4%22%20fill=%22rgb%2828,28,27%29%22%20fill-rule=%22evenodd%22%20/%3E%3C/svg%3E");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media (max-width: 992px) {
+  .lms-jumbo-call-to-action__list::before {
+    content: none;
+  }
+  .lms-jumbo-call-to-action__list li {
+    text-align: center;
+  }
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/blocks/simple-call-to-action/style.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************/
+.lms-simple-call-to-action {
+  position: relative;
+  padding: 2.5rem;
+}
+.lms-simple-call-to-action::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--site-main-color);
+  opacity: 0.1;
+}
+.lms-simple-call-to-action__title {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  font-family: var(--font-main);
+  font-weight: var(--headings-1-weight);
+  font-size: 2rem;
+  color: var(--site-third-color);
+  margin-bottom: 0;
+}
+.lms-simple-call-to-action__title__complement {
+  font-family: var(--font-headings);
+  font-weight: var(--subtitles-weight);
+  font-style: italic;
+}
+@media (max-width: 992px) {
+  .lms-simple-call-to-action__title {
+    font-size: 1.5rem;
+  }
 }
 
 /*# sourceMappingURL=style-script.css.map*/
