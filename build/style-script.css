@@ -93,7 +93,7 @@
   color: var(--site-third-color);
 }
 .lms-tutoring-grid .lms-tutoring-grid__front-layer .lms-tutoring-grid__front-layer__title a:hover {
-  color: var(--site-hover-color);
+  color: var(--site-secondary-color);
 }
 .lms-tutoring-grid .lms-tutoring-grid__front-layer .lms-tutoring-grid__front-layer__title:before {
   content: "";
@@ -109,7 +109,7 @@
 .lms-tutoring-grid .lms-tutoring-grid__front-layer .lms-tutoring-grid__front-layer__title .title-complement {
   display: block;
   font-weight: var(--subtitles-weight);
-  font-size: 0.5em;
+  font-size: 0.7em;
   color: var(--site-dark-color);
 }
 .lms-tutoring-grid .row {

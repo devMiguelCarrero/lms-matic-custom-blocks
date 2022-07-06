@@ -26,16 +26,19 @@ const SaveSectionTitle = (props) => {
 					<ul className="lms-jumbo-call-to-action__list">
 						<RichText.Content
 							key="list-item-1"
+							className="list-item-1"
 							tagName="li"
 							value={firstText}
 						/>
 						<RichText.Content
 							key="list-item-2"
+							className="list-item-2"
 							tagName="li"
 							value={secondText}
 						/>
 						<RichText.Content
 							key="list-item-3"
+							className="list-item-3"
 							tagName="li"
 							value={thirdText}
 						/>

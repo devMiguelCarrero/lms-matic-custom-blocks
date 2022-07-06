@@ -112,6 +112,7 @@ const EditCallToAction = props => {
     className: "lms-jumbo-call-to-action__list"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
     key: "list-item-1",
+    className: "list-item-1",
     tagName: "li",
     formattingControl: ['bold', 'italic'],
     value: firstText,
@@ -120,6 +121,7 @@ const EditCallToAction = props => {
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
     tagName: "li",
     key: "list-item-2",
+    className: "list-item-2",
     formattingControl: ['bold', 'italic'],
     value: secondText,
     placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)('Action second feature', _block_data_block_data__WEBPACK_IMPORTED_MODULE_4__.textDomain),
@@ -127,6 +129,7 @@ const EditCallToAction = props => {
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
     tagName: "li",
     key: "list-item-3",
+    className: "list-item-3",
     formattingControl: ['bold', 'italic'],
     value: thirdText,
     placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)('Action third feature', _block_data_block_data__WEBPACK_IMPORTED_MODULE_4__.textDomain),
@@ -187,14 +190,17 @@ const SaveSectionTitle = props => {
     className: "lms-jumbo-call-to-action__list"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.RichText.Content, {
     key: "list-item-1",
+    className: "list-item-1",
     tagName: "li",
     value: firstText
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.RichText.Content, {
     key: "list-item-2",
+    className: "list-item-2",
     tagName: "li",
     value: secondText
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__.RichText.Content, {
     key: "list-item-3",
+    className: "list-item-3",
     tagName: "li",
     value: thirdText
   })))));

@@ -49,6 +49,7 @@ const EditCallToAction = (props) => {
 					<ul className="lms-jumbo-call-to-action__list">
 						<RichText
 							key="list-item-1"
+							className="list-item-1"
 							tagName="li"
 							formattingControl={['bold', 'italic']}
 							value={firstText}
@@ -58,6 +59,7 @@ const EditCallToAction = (props) => {
 						<RichText
 							tagName="li"
 							key="list-item-2"
+							className="list-item-2"
 							formattingControl={['bold', 'italic']}
 							value={secondText}
 							placeholder={__(
@@ -69,6 +71,7 @@ const EditCallToAction = (props) => {
 						<RichText
 							tagName="li"
 							key="list-item-3"
+							className="list-item-3"
 							formattingControl={['bold', 'italic']}
 							value={thirdText}
 							placeholder={__('Action third feature', textDomain)}

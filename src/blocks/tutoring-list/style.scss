@@ -24,7 +24,7 @@ $site_secondary_color: #fcaa3a;
 			a {
 				color: var(--site-third-color);
 				&:hover {
-					color: var(--site-hover-color);
+					color: var(--site-secondary-color);
 				}
 			}
 
@@ -43,7 +43,7 @@ $site_secondary_color: #fcaa3a;
 			.title-complement {
 				display: block;
 				font-weight: var(--subtitles-weight);
-				font-size: 0.5em;
+				font-size: 0.7em;
 				color: var(--site-dark-color);
 			}
 		}
