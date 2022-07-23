@@ -5,6 +5,7 @@ import { URLs, Colors } from '../../../../block-data/block-data';
 import Slider from 'react-slick';
 import { useState, useEffect } from '@wordpress/element';
 import LogoLoader from '../../../../components/loaders/LogoLoader';
+import { stripHtml } from 'string-strip-html';
 
 const ezTutotingList = ({ postData }) => {
 	const [posts, setPosts] = useState(null);
@@ -28,7 +29,7 @@ const ezTutotingList = ({ postData }) => {
 						return (
 							<div className="col-6 col-md-3">
 								<div className="lms-tutoring-grid__front-layer">
-									<h3 className="lms-tutoring-grid__front-layer__title">
+									<h3 className="lms-tutoring-grid__front-layer__title mb-3">
 										<a href={post.link}>
 											{post.meta['tutoring-short-title']}{' '}
 											<span className="title-complement">
@@ -40,6 +41,12 @@ const ezTutotingList = ({ postData }) => {
 											</span>
 										</a>
 									</h3>
+									<small className="text-center">
+										{
+											stripHtml(post.excerpt.rendered)
+												.result
+										}
+									</small>
 								</div>
 							</div>
 						);
