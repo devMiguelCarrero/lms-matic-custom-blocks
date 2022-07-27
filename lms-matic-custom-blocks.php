@@ -3,7 +3,7 @@
 Plugin Name: LMS Matic Custom Blocks
 Plugin URI: #
 Description: Wordpress plugin made to manage custom Gutenberg blocks for LMS-Matic Wordpress Theme
-Version: 1.0.1
+Version: 1.0.2
 Author: devMiguelCarrero
 Author URI: #
 License: OSLv3
@@ -25,7 +25,7 @@ if ( !function_exists( 'add_action' ) ) {
 }
 
 define( 'LMSCB_TEXTDOMAIN' , 'lms-matic-custom-blocks' );
-define( 'LMSCB_VERSION' , '1.0' );
+define( 'LMSCB_VERSION' , '1.0.2' );
 define( 'LMSCB_SITE_URL', get_site_url() . '/' );
 define( 'LMSCB_ACHIEVEMENTS_PATH' , plugin_dir_path( __FILE__ ) . DIRECTORY_SEPARATOR );
 define( 'LMSCB_PLUGIN_URL' , plugin_dir_url( __FILE__ ) . DIRECTORY_SEPARATOR );

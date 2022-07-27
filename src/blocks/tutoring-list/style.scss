@@ -20,6 +20,9 @@ $site_secondary_color: #fcaa3a;
 			color: var(--site-third-color);
 			text-transform: uppercase;
 			text-align: center;
+			@media (max-width: 991px) {
+				font-size: 1rem;
+			}
 
 			a {
 				color: var(--site-third-color);
@@ -46,6 +49,17 @@ $site_secondary_color: #fcaa3a;
 				font-size: 0.7em;
 				color: var(--site-dark-color);
 			}
+		}
+
+		.lms-tutoring-grid__front-layer__desc {
+			@media (max-width: 991px) {
+				font-size: 0.7rem;
+			}
+		}
+
+		@media (max-width: 991px) {
+			border: solid 1px var(--site-main-color);
+			margin-bottom: 15px;
 		}
 	}
 

@@ -41,7 +41,7 @@ const ezTutotingList = ({ postData }) => {
 											</span>
 										</a>
 									</h3>
-									<small className="text-center">
+									<small className="text-center lms-tutoring-grid__front-layer__desc">
 										{
 											stripHtml(post.excerpt.rendered)
 												.result
