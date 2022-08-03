@@ -10,7 +10,7 @@
 		"html": false,
 		"color": {
 			"gradients": false,
-			"background": false,
+			"background": true,
 			"icon": true,
 			"text": true
 		}
