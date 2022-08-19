@@ -14,6 +14,7 @@
             register_block_type_from_metadata( LMSCB_BLOCKS_PATH . 'tutoring-list' );
             register_block_type_from_metadata( LMSCB_BLOCKS_PATH . 'call-to-action-list' );
             register_block_type_from_metadata( LMSCB_BLOCKS_PATH . 'simple-call-to-action' );
+            register_block_type_from_metadata( LMSCB_BLOCKS_PATH . 'highlighter-arrow' );
         }
 
         public static function instance() {

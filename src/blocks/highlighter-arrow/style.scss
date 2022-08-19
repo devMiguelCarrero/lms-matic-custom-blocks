@@ -1,0 +1,32 @@
+.lms-highlighter-arrow {
+	position: relative;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 40px;
+	height: 40px;
+	svg {
+		stroke: var(--site-secondary-color);
+		display: block;
+		width: 100%;
+		height: 100%;
+		animation: bounce 0.8s linear infinite;
+	}
+}
+
+@keyframes bounce {
+	0% {
+		transform: translateY(0px);
+		stroke: var(--site-secondary-color);
+	}
+
+	50% {
+		transform: translateY(10px);
+		stroke: var(--site-third-color);
+	}
+
+	100% {
+		transform: translateY(0px);
+		stroke: var(--site-secondary-color);
+	}
+}

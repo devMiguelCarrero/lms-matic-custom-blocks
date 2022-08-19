@@ -2501,6 +2501,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/blocks/highlighter-arrow/script.js":
+/*!************************************************!*\
+  !*** ./src/blocks/highlighter-arrow/script.js ***!
+  \************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.scss */ "./src/blocks/highlighter-arrow/style.scss");
+
+
+/***/ }),
+
 /***/ "./src/blocks/section-container/script.js":
 /*!************************************************!*\
   !*** ./src/blocks/section-container/script.js ***!
@@ -2849,6 +2862,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _blocks_testimonial_carousel_script__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./blocks/testimonial-carousel/script */ "./src/blocks/testimonial-carousel/script.js");
 /* harmony import */ var _blocks_call_to_action_list_script__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./blocks/call-to-action-list/script */ "./src/blocks/call-to-action-list/script.js");
 /* harmony import */ var _blocks_simple_call_to_action_script__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./blocks/simple-call-to-action/script */ "./src/blocks/simple-call-to-action/script.js");
+/* harmony import */ var _blocks_highlighter_arrow_script__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./blocks/highlighter-arrow/script */ "./src/blocks/highlighter-arrow/script.js");
+
 
 
 
@@ -7354,6 +7369,19 @@ __webpack_require__.r(__webpack_exports__);
 /*!***************************************************!*\
   !*** ./src/blocks/call-to-action-list/style.scss ***!
   \***************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./src/blocks/highlighter-arrow/style.scss":
+/*!*************************************************!*\
+  !*** ./src/blocks/highlighter-arrow/style.scss ***!
+  \*************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

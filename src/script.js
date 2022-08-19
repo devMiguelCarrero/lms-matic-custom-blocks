@@ -6,3 +6,4 @@ import './blocks/tutoring-list/script';
 import './blocks/testimonial-carousel/script';
 import './blocks/call-to-action-list/script';
 import './blocks/simple-call-to-action/script';
+import './blocks/highlighter-arrow/script';

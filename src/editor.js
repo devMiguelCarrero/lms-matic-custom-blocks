@@ -5,3 +5,4 @@ import './blocks/testimonial-carousel';
 import './blocks/tutoring-list';
 import './blocks/call-to-action-list';
 import './blocks/simple-call-to-action';
+import './blocks/highlighter-arrow';

@@ -1,0 +1,13 @@
+{
+	"apiVersion": 2,
+	"name": "lms-matic-custom-blocks/highlighter-arrow",
+	"title": "Highlighter Arrow",
+	"category": "widgets",
+	"icon": "admin-post",
+	"description": "SVG animated arrow made to highlight important components",
+	"keywords": ["highlight", "highlighter", "arrow", "animation", "LMS"],
+	"supports": {
+		"html": false
+	},
+	"textdomain": "highlighter-arrow"
+}
