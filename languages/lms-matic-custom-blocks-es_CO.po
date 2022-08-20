@@ -1,0 +1,53 @@
+# Copyright (C) 2022 devMiguelCarrero
+# This file is distributed under the OSLv3.
+msgid ""
+msgstr ""
+"Project-Id-Version: LMS Matic Custom Blocks 1.0.2\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/lms-matic-custom-"
+"blocks\n"
+"POT-Creation-Date: 2022-08-20T02:42:05+02:00\n"
+"PO-Revision-Date: 2022-08-19 19:42-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es_CO\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.1.1\n"
+"X-Domain: lms-matic-custom-blocks\n"
+
+#. Plugin Name of the plugin
+msgid "LMS Matic Custom Blocks"
+msgstr ""
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+msgid "#"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Wordpress plugin made to manage custom Gutenberg blocks for LMS-Matic "
+"Wordpress Theme"
+msgstr ""
+
+#. Author of the plugin
+msgid "devMiguelCarrero"
+msgstr ""
+
+#: lms-matic-custom-blocks.php:40
+msgid "dd"
+msgstr "ddd"
+
+#: build/editor.js:466 build/editor.js:314
+msgid "Review form"
+msgstr "Formulario de Revisión"
+
+#: build/script.js:2579 build/script.js:2209
+msgid "Send Review"
+msgstr "Enviar Respuesta"
+
+#: build/script.js:2579 build/script.js:2210
+msgid "Sending..."
+msgstr "Enviando..."
