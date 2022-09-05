@@ -14,7 +14,6 @@ const ezPostCarousel = ({ postData }) => {
 			const response = await Axios.get(
 				`${URLs.main_url}wp-json/wp/v2/testimonial?per_page=${postData.numberOfPosts}&_embed`
 			);
-			console.log(response.data);
 			setPosts(response.data);
 		} catch (error) {
 			console.log(error);

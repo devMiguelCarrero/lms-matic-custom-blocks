@@ -7,3 +7,4 @@ import './blocks/call-to-action-list';
 import './blocks/simple-call-to-action';
 import './blocks/highlighter-arrow';
 import './blocks/review-form';
+import './blocks/features';

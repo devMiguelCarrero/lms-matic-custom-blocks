@@ -1,0 +1,26 @@
+.lms-features {
+	justify-content: center;
+
+	&__feature {
+		max-width: 17rem;
+		margin-left: auto;
+		margin-right: auto;
+
+		img {
+			display: block;
+			max-width: 70%;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 1rem;
+		}
+
+		.feature-title {
+			font-family: var(--font-headings-2);
+			font-size: 1.1em;
+		}
+
+		p {
+			text-align: center;
+		}
+	}
+}

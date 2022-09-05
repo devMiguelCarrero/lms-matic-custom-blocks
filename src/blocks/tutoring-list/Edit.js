@@ -33,8 +33,6 @@ const EditPostCarousel = (props) => {
 		[numberOfPosts]
 	);
 
-	console.log(posts);
-
 	return (
 		<>
 			<InspectorControls>

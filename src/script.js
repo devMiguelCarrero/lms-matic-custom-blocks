@@ -8,3 +8,4 @@ import './blocks/call-to-action-list/script';
 import './blocks/simple-call-to-action/script';
 import './blocks/highlighter-arrow/script';
 import './blocks/review-form/script';
+import './blocks/features/script';

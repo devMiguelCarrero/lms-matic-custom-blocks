@@ -1,0 +1,44 @@
+{
+	"apiVersion": 2,
+	"name": "lms-matic-custom-blocks/feature",
+	"title": "Feature",
+	"category": "widgets",
+	"icon": "admin-post",
+	"description": "Feature item for the block Features",
+	"keywords": ["features", "row", "images", "content"],
+	"parent": ["lms-matic-custom-blocks/features"],
+	"supports": {
+		"reusable": false,
+		"html": false
+	},
+	"textdomain": "feature",
+	"attributes": {
+		"title": {
+			"type": "string",
+			"source": "html",
+			"selector": "span.feature-title"
+		},
+		"description": {
+			"type": "string",
+			"source": "html",
+			"selector": "span.feature-description"
+		},
+		"id": {
+			"type": "number"
+		},
+		"alt": {
+			"type": "string",
+			"source": "attribute",
+			"selector": "img",
+			"attribute": "alt",
+			"default": ""
+		},
+		"url": {
+			"type": "string",
+			"source": "attribute",
+			"selector": "img",
+			"attribute": "src",
+			"default": "https://i.picsum.photos/id/237/300/200.jpg?hmac=WSdbBEXvCVSqNN1HnCzm7ohp6DhAJfl9t3TcqBNDn_Q"
+		}
+	}
+}

@@ -1,0 +1,25 @@
+.lms-features {
+	> .block-editor-inner-blocks {
+		> .block-editor-block-list__layout {
+			.lms-features__feature {
+				.lms-features__feature__image {
+					&.is-loading img {
+						opacity: 0.3;
+					}
+					.components-spinner {
+						position: absolute;
+						left: 0;
+						right: 0;
+						top: 0;
+						bottom: 0;
+						margin: auto;
+					}
+				}
+				.feature-title {
+					font-size: 1.2em;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+}

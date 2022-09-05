@@ -1,0 +1,53 @@
+{
+	"apiVersion": 2,
+	"name": "lms-matic-custom-blocks/features",
+	"title": "Features",
+	"category": "widgets",
+	"icon": "admin-post",
+	"description": "Features list for the website",
+	"keywords": ["features", "row", "images"],
+	"supports": {
+		"html": false
+	},
+	"textdomain": "features",
+	"attributes": {
+		"columns": {
+			"type": "number",
+			"default": 3
+		}
+	},
+	"example": {
+		"attributes": {
+			"columns": 3
+		},
+		"innerBlocks": [
+			{
+				"name": "blocks-course/team-member",
+				"description": {
+					"title": "John Doe",
+					"bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+					"url": "https://i.picsum.photos/id/237/300/200.jpg?hmac=WSdbBEXvCVSqNN1HnCzm7ohp6DhAJfl9t3TcqBNDn_Q",
+					"alt": ""
+				}
+			},
+			{
+				"name": "blocks-course/team-member",
+				"attributes": {
+					"title": "Jane Doe",
+					"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+					"url": "https://i.picsum.photos/id/237/300/200.jpg?hmac=WSdbBEXvCVSqNN1HnCzm7ohp6DhAJfl9t3TcqBNDn_Q",
+					"alt": ""
+				}
+			},
+			{
+				"name": "blocks-course/team-member",
+				"attributes": {
+					"title": "Jane Doe 2",
+					"description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+					"url": "https://i.picsum.photos/id/237/300/200.jpg?hmac=WSdbBEXvCVSqNN1HnCzm7ohp6DhAJfl9t3TcqBNDn_Q",
+					"alt": ""
+				}
+			}
+		]
+	}
+}
