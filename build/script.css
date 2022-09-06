@@ -333,7 +333,7 @@
   display: block;
   margin-bottom: 1rem;
   margin-top: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-align: center;
   cursor: pointer;
 }
@@ -345,7 +345,10 @@
 }
 .lms-radio-list .lms-radio-label__content:before {
   margin-right: 0.3rem;
-  content: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 height=%2724px%27 viewBox=%270 0 24 24%27 width=%2724px%27 fill=%27%23000000%27%3E%3Cpath d=%27M0 0h24v24H0V0z%27 fill=%27none%27/%3E%3Cpath d=%27M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z%27/%3E%3C/svg%3E");
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 height=%2724px%27 viewBox=%270 0 24 24%27 width=%2724px%27 fill=%27%23000000%27%3E%3Cpath d=%27M0 0h24v24H0V0z%27 fill=%27none%27/%3E%3Cpath d=%27M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z%27/%3E%3C/svg%3E");
+  background-size: contain;
+  background-position: center center;
   width: 1em;
   height: 1em;
 }
@@ -353,7 +356,7 @@
   display: none;
 }
 .lms-radio-list .lms-radio-label__input:checked + .lms-radio-label__content::before {
-  content: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 height=%2724px%27 viewBox=%270 0 24 24%27 width=%2724px%27 fill=%27%23000000%27%3E%3Cpath d=%27M0 0h24v24H0V0z%27 fill=%27none%27/%3E%3Cpath d=%27M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z%27/%3E%3Ccircle cx=%2712%27 cy=%2712%27 r=%275%27/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 height=%2724px%27 viewBox=%270 0 24 24%27 width=%2724px%27 fill=%27%23000000%27%3E%3Cpath d=%27M0 0h24v24H0V0z%27 fill=%27none%27/%3E%3Cpath d=%27M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z%27/%3E%3Ccircle cx=%2712%27 cy=%2712%27 r=%275%27/%3E%3C/svg%3E");
 }
 
 /*# sourceMappingURL=script.css.map*/
