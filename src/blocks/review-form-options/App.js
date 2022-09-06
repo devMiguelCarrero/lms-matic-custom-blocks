@@ -22,18 +22,17 @@ const ReviewFormApp = () => {
 
 		console.log(reviewOption);
 
-		/*const params = new URLSearchParams();
-		params.append('action', 'lmscx_update_post_reviews');
+		const params = new URLSearchParams();
+		params.append('action', 'lmscx_update_post_reviews_options');
 		params.append('current_post', PostInfo.current_post);
-		params.append('message', reviewText);
+		params.append('option', reviewOption);
 
 		const response = await axios.post(URLs.ajax_url, params);
-		setResponseMessage(response.data.message);*/
+		setResponseMessage(response.data.message);
 
 		setSent(true);
 		setLoading(false);
 	};
-
 
 	const options = [
 		{ key: 'Martes 20 6:30 pm', value: 'Martes 20 6:30 pm' },

@@ -2567,13 +2567,12 @@ const ReviewFormApp = () => {
     event.preventDefault();
     setLoading(true);
     console.log(reviewOption);
-    /*const params = new URLSearchParams();
-    params.append('action', 'lmscx_update_post_reviews');
-    params.append('current_post', PostInfo.current_post);
-    params.append('message', reviewText);
-    		const response = await axios.post(URLs.ajax_url, params);
-    setResponseMessage(response.data.message);*/
-
+    const params = new URLSearchParams();
+    params.append('action', 'lmscx_update_post_reviews_options');
+    params.append('current_post', _block_data_block_data__WEBPACK_IMPORTED_MODULE_3__.PostInfo.current_post);
+    params.append('option', reviewOption);
+    const response = await axios__WEBPACK_IMPORTED_MODULE_2___default().post(_block_data_block_data__WEBPACK_IMPORTED_MODULE_3__.URLs.ajax_url, params);
+    setResponseMessage(response.data.message);
     setSent(true);
     setLoading(false);
   };
