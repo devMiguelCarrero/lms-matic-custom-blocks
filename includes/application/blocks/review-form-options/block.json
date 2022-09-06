@@ -1,0 +1,13 @@
+{
+	"apiVersion": 2,
+	"name": "lms-matic-custom-blocks/review-form-options",
+	"title": "Review Form Options",
+	"category": "widgets",
+	"icon": "admin-post",
+	"description": "Review form for descubre, assesories and courses",
+	"keywords": ["review", "form", "feedback", "options", "LMS"],
+	"supports": {
+		"html": false
+	},
+	"textdomain": "review-form-options"
+}

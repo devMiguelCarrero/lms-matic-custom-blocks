@@ -71,7 +71,7 @@ class LMSCB_EnqueueBuilder
 			case 'script':
 				wp_register_script($this->enqueue->name, $this->enqueue->path, $this->enqueue->dependencies, $this->enqueue->ver, $this->enqueue->inFooter);
 				wp_enqueue_script($this->enqueue->name);
-				wp_set_script_translations($this->enqueue->name, LMSCB_TEXTDOMAIN,  LMSCB_PLUGIN_PATH . 'languages');
+				//wp_set_script_translations($this->enqueue->name, LMSCB_TEXTDOMAIN,  LMSCB_PLUGIN_PATH . 'languages');
 				break;
 
 			default:
@@ -84,7 +84,6 @@ class LMSCB_EnqueueBuilder
 
 	public function localizeScript($script)
 	{
-
 		foreach ($script as $key => $value) {
 
 			wp_localize_script($this->enqueue->name, $key, $value);
