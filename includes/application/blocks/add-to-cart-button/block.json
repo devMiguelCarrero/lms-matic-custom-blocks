@@ -1,0 +1,19 @@
+{
+	"apiVersion": 2,
+	"name": "lms-matic-custom-blocks/add-to-cart-button",
+	"title": "Add to cart button",
+	"category": "widgets",
+	"icon": "admin-post",
+	"description": "Call to action with an editable richtext list",
+	"keywords": ["add", "to", "cart", "product", "buy", "woocommerce"],
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"selectedProduct": {
+			"type": "number",
+			"default": 0
+		}
+	},
+	"textdomain": "add-to-cart-button"
+}

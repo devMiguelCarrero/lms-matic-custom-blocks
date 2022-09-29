@@ -402,5 +402,73 @@
     font-size: 1.5rem;
   }
 }
+/*!*****************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/blocks/add-to-cart-button/style.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************/
+.lms-add-to-cart-button {
+  padding: 1rem;
+  border: solid 1px var(--site-main-color);
+}
+.lms-add-to-cart-button__loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  background-color: var(--black-tone);
+}
+.lms-add-to-cart-button__loader svg {
+  width: 50px;
+  height: 50px;
+  -webkit-animation: zoom 1s infinite linear;
+          animation: zoom 1s infinite linear;
+}
+.lms-add-to-cart-button .lms-tutoring-buy-card {
+  position: relative;
+  padding: 0;
+  border: none;
+}
+.lms-add-to-cart-button .lms-tutoring-buy-card__features {
+  margin-bottom: 1rem;
+}
+.lms-add-to-cart-button .lms-tutoring-buy-card .add-to-cart-button {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+.lms-add-to-cart-button__button-container__title span.regular-price {
+  margin-right: 10px;
+  text-decoration: line-through;
+  color: #adadad;
+}
+
+@-webkit-keyframes zoom {
+  0% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.2, 1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes zoom {
+  0% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.2, 1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
 
 /*# sourceMappingURL=style-script.css.map*/

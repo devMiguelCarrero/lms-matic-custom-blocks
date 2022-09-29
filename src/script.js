@@ -10,3 +10,4 @@ import './blocks/highlighter-arrow/script';
 import './blocks/review-form/script';
 import './blocks/review-form-options/script';
 import './blocks/features/script';
+import './blocks/add-to-cart-button/script';

@@ -23,9 +23,7 @@ const EditSimpleCallToAction = (props) => {
 	const blockProps = useBlockProps({
 		className: classes,
 	});
-
-	console.log('lms-simple-call-to-action__title');
-
+	
 	return (
 		<>
 			<div {...blockProps}>
