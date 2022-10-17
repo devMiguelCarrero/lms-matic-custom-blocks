@@ -25,8 +25,6 @@ const ProductInfo = ({ dataPosts }) => {
 		getSummary();
 	}, []);
 
-	console.log(productInfo);
-
 	return (
 		<>
 			{!productInfo && (

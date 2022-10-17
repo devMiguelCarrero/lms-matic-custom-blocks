@@ -29,6 +29,18 @@
 			margin-left: auto;
 			margin-right: auto;
 		}
+
+		.message-log {
+			text-align: center;
+			font-weight: bold;
+			margin: 1rem auto;
+			&.success-log {
+				color: var(--site-third-color);
+			}
+			&.error-log {
+				color: var(--site-fail-color);
+			}
+		}
 	}
 
 	&__button-container {
@@ -36,7 +48,7 @@
 			span {
 				&.regular-price {
 					margin-right: 10px;
-					text-decoration:line-through;
+					text-decoration: line-through;
 					color: rgb(173, 173, 173);
 				}
 			}

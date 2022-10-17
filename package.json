@@ -17,8 +17,8 @@
 	"prettier": "@wordpress/prettier-config",
 	"dependencies": {
 		"@fortawesome/fontawesome-svg-core": "^6.2.0",
-    "@fortawesome/free-solid-svg-icons": "^6.2.0",
-    "@fortawesome/react-fontawesome": "^0.2.0",
+		"@fortawesome/free-solid-svg-icons": "^6.2.0",
+		"@fortawesome/react-fontawesome": "^0.2.0",
 		"@wordpress/blob": "^3.16.0",
 		"@wordpress/block-editor": "^8.0.13",
 		"@wordpress/blocks": "^11.1.4",
@@ -29,8 +29,6 @@
 		"@wordpress/element": "^4.1.0",
 		"@wordpress/i18n": "^4.2.4",
 		"axios": "^0.27.2",
-		"gulp": "^4.0.2",
-		"gulp-zip": "^5.1.0",
 		"react-slick": "^0.29.0",
 		"slick-carousel": "^1.8.1",
 		"string-strip-html": "^11.0.0"
@@ -41,6 +39,8 @@
 		"@wordpress/scripts": "^21.0.0",
 		"@wordpress/stylelint-config": "^19.1.0",
 		"eslint-config-prettier": "^8.3.0",
+		"gulp": "^4.0.2",
+		"gulp-zip": "^5.1.0",
 		"husky": "^7.0.4",
 		"lint-staged": "^12.1.3"
 	}
