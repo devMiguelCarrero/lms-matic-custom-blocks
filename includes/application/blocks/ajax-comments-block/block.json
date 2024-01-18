@@ -1,0 +1,13 @@
+{
+	"apiVersion": 2,
+	"name": "lms-matic-custom-blocks/ajax-comments-block",
+	"title": "AJAX comments block",
+	"category": "widgets",
+	"icon": "admin-post",
+	"description": "WordPress native comment block called via AJAX",
+	"keywords": ["ajax", "comments", "block", "forum", "comment", "text"],
+	"supports": {
+		"html": false
+	},
+	"textdomain": "ajax-comments-block"
+}
