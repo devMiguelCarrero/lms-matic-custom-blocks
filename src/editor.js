@@ -10,3 +10,4 @@ import './blocks/review-form';
 import './blocks/review-form-options';
 import './blocks/features';
 import './blocks/add-to-cart-button';
+import './blocks/ajax-comments-block';
