@@ -14,7 +14,7 @@ const SaveAddToCart = (props) => {
 	});
 
 	return (
-		<div {...blockProps} data-posts={JSON.stringify({ selectedProduct })}>
+		<div {...blockProps} data-posts={btoa(JSON.stringify({ selectedProduct }))}>
 			<p>add to cart</p>
 		</div>
 	);

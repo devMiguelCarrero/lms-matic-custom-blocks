@@ -9,8 +9,11 @@ import AddToCartButton from './AddToCartButton';
 const ProductInfo = ({ dataPosts }) => {
 	const [productInfo, setProductInfo] = useState();
 
-	const postData = JSON.parse(dataPosts);
+	console.log(dataPosts);
+	const postData = JSON.parse(atob(dataPosts));
 	const selectedProduct = parseInt(postData.selectedProduct) || 0;
+
+	console.log(postData);
 
 	useEffect(() => {
 		const getSummary = async () => {
@@ -34,36 +37,46 @@ const ProductInfo = ({ dataPosts }) => {
 			)}
 			{productInfo && (
 				<div className="lms-tutoring-buy-card">
-					<h5>{__('Features', 'lms-matic-tutoring-management')}</h5>
-					<ul className="lms-tutoring-buy-card__features">
-						<li key="assesory-duration">
-							<b>
+					{productInfo.content.data.duration && (
+						<>
+							<h5>
 								{__(
-									'Duration:',
+									'Features',
 									'lms-matic-tutoring-management'
 								)}
-							</b>{' '}
-							{productInfo.content.data.duration}
-						</li>
-						<li key="assesory-modality">
-							<b>
-								{__(
-									'Modality:',
-									'lms-matic-tutoring-management'
-								)}
-							</b>{' '}
-							{productInfo.content.data.modality}
-						</li>
-						<li key="assesory-methodology">
-							<b>
-								{__(
-									'Methodology:',
-									'lms-matic-tutoring-management'
-								)}
-							</b>{' '}
-							{productInfo.content.data.methodology}
-						</li>
-					</ul>
+							</h5>
+							<ul className="lms-tutoring-buy-card__features">
+								<li key="assesory-duration">
+									<b>
+										{__(
+											'Duration:',
+											'lms-matic-tutoring-management'
+										)}
+									</b>{' '}
+									{productInfo.content.data.duration}
+								</li>
+								<li key="assesory-modality">
+									<b>
+										{__(
+											'Modality:',
+											'lms-matic-tutoring-management'
+										)}
+									</b>{' '}
+									{productInfo.content.data.modality}
+								</li>
+								<li key="assesory-methodology">
+									<b>
+										{__(
+											'Methodology:',
+											'lms-matic-tutoring-management'
+										)}
+									</b>{' '}
+									{productInfo.content.data.methodology}
+								</li>
+							</ul>
+						</>
+					)}
+
 					{selectedProduct && productInfo.product !== 0 ? (
 						<AddToCartButton
 							product={productInfo.product}

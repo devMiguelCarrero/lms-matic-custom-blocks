@@ -29,7 +29,7 @@ const EditFeature = ({
 	noticeUI,
 	isSelected,
 }) => {
-	const { title, description, url, alt, className } = attributes;
+	const { id, title, description, url, alt, className } = attributes;
 	const [blobURL, setBlobURL] = useState();
 	const [selectedLink, setSelectedLink] = useState();
 
