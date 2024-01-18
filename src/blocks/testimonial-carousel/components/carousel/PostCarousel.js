@@ -9,10 +9,12 @@ import LogoLoader from '../../../../components/loaders/LogoLoader';
 const ezPostCarousel = ({ postData }) => {
 	const [posts, setPosts] = useState(null);
 
+	const thePostData = JSON.parse(atob(postData));
+
 	useEffect(async () => {
 		try {
 			const response = await Axios.get(
-				`${URLs.main_url}wp-json/wp/v2/testimonial?per_page=${postData.numberOfPosts}&_embed`
+				`${URLs.main_url}wp-json/wp/v2/testimonial?per_page=${thePostData.numberOfPosts}&_embed`
 			);
 			setPosts(response.data);
 		} catch (error) {

@@ -16,7 +16,7 @@ const SavePostCarousel = (props) => {
 	return (
 		<div
 			{...blockProps}
-			data-posts={JSON.stringify({ numberOfPosts })}
+			data-posts={btoa(JSON.stringify({ numberOfPosts }))}
 		></div>
 	);
 };
