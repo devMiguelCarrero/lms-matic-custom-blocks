@@ -24,6 +24,7 @@ class LMSCB_Blocks
 		register_block_type_from_metadata(LMSCB_BLOCKS_PATH . 'features');
 		register_block_type_from_metadata(LMSCB_BLOCKS_PATH . 'add-to-cart-button');
 		register_block_type_from_metadata(LMSCB_BLOCKS_PATH . 'ajax-comments-block');
+		register_block_type_from_metadata(LMSCB_BLOCKS_PATH . 'pricing-tables');
 	}
 
 	public static function instance()

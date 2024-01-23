@@ -1,0 +1,25 @@
+$gap_size: 15px;
+
+.lms-pricing-tabs {
+	position: relative;
+
+	&__list-tabs {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: center;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		gap: $gap_size;
+	}
+
+	&__tab {
+		border: solid 1px #000;
+		padding: 15px;
+	}
+
+	&__price {
+		font-size: 20px;
+	}
+}
