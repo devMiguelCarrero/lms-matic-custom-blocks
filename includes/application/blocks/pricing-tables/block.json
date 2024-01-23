@@ -1,0 +1,36 @@
+{
+	"apiVersion": 2,
+	"name": "lms-matic-custom-blocks/pricing-tables",
+	"title": "Pticing Tables",
+	"category": "media",
+	"icon": "groups",
+	"description": "pricing tables used for lms-matic wordpress theme structure",
+	"keywords": ["pricing", "tables", "lms", "woocommerce"],
+	"supports": {
+		"html": false,
+		"align": ["wide"]
+	},
+	"textdomain": "pricing-tables",
+	"providesContext": {
+		"lms-matic-custom-blocks/pricing-tables-tabs": "tabs"
+	},
+	"attributes": {
+		"tabs": {
+			"type": "number",
+			"default": 3
+		}
+	},
+	"example": {
+		"attributes": {
+			"tabs": 3,
+			"price": 1000000
+		}
+	},
+	"styles": [
+		{
+			"name": "default",
+			"label": "Default",
+			"isDefault": true
+		}
+	]
+}

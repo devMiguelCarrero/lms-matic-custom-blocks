@@ -1,0 +1,65 @@
+.lms-matic-custom-blocks {
+	display: block;
+	* {
+		box-sizing: border-box;
+	}
+
+	> .block-editor-inner-blocks {
+		> .block-editor-block-list__layout {
+			display: flex;
+			flex-wrap: wrap;
+			margin-left: -10px;
+			margin-right: -10px;
+			box-sizing: border-box;
+			[data-type="lms-matic-custom-blocks/price-tab"] {
+				max-width: none;
+				margin: 0;
+			}
+			> [data-type="lms-matic-custom-blocks/price-tab"] {
+				> [data-type="lms-matic-custom-blocks/price-tab"] {
+					width: 100%;
+					padding: 10px;
+
+					.block-editor-media-placeholder {
+						margin-bottom: 20px;
+					}
+
+					.wp-block-blocks-course-team-member-img {
+						position: relative;
+						margin-bottom: 20px;
+						&.is-loading img {
+							opacity: 0.3;
+						}
+						.components-spinner {
+							position: absolute;
+							left: 0;
+							right: 0;
+							top: 0;
+							bottom: 0;
+							margin: auto;
+						}
+					}
+				}
+				h4 {
+					color: #222;
+					font-size: 22px;
+					font-weight: bold;
+					margin: 0;
+				}
+
+				p {
+					color: #565656;
+					font-size: 16px;
+					font-weight: 300;
+					margin-bottom: 5px;
+				}
+				.wp-block-blocks-course-team-member-link-form {
+					background: #fff;
+					border: 1px solid;
+					padding: 10px;
+					margin-top: 10px;
+				}
+			}
+		}
+	}
+}

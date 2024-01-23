@@ -12,3 +12,4 @@ import './blocks/review-form-options/script';
 import './blocks/features/script';
 import './blocks/add-to-cart-button/script';
 import './blocks/ajax-comments-block/script';
+import './blocks/pricing-tables/script';
