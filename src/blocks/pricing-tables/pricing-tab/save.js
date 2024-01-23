@@ -1,4 +1,4 @@
-import { useBlockProps, InnerBlocks, RichText } from '@wordpress/block-editor';
+import { useBlockProps, InnerBlocks } from '@wordpress/block-editor';
 import classNames from 'classnames';
 
 export default function SavePricingTab({ attributes }) {
@@ -14,11 +14,7 @@ export default function SavePricingTab({ attributes }) {
 
 	return (
 		<div {...blockProps}>
-			<RichText.Content
-				className="lms-pricing-tabs__price"
-				tagName="p"
-				value={price}
-			/>
+			<p className="lms-pricing-tabs__price">{price}</p>
 			<InnerBlocks.Content />
 		</div>
 	);

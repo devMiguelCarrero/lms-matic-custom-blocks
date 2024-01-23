@@ -1,4 +1,9 @@
-import { useBlockProps, InnerBlocks, RichText } from '@wordpress/block-editor';
+import {
+	useBlockProps,
+	InnerBlocks,
+	InspectorControls,
+} from '@wordpress/block-editor';
+import { PanelBody, TextControl } from '@wordpress/components';
 import { __ } from '@wordpress/i18n';
 import { textDomain } from '../../../block-data/block-data';
 import classNames from 'classnames';
@@ -19,18 +24,37 @@ const EditPricingTab = (props) => {
 		setAttributes({ price: newPrice });
 	};
 
+	const TEMPLATE = [
+		[
+			'core/list',
+			{},
+			[
+				['core/list-item', { placeholder: __('Item 1', textDomain) }],
+				['core/list-item', { placeholder: __('Item 2', textDomain) }],
+				['core/list-item', { placeholder: __('Item 3', textDomain) }],
+			],
+		],
+	];
+
 	return (
 		<div {...blockProps}>
-			<RichText
+			<InspectorControls>
+				<PanelBody>
+					<TextControl
+						label={__('Price', 'team-members')}
+						onChange={onChangePrice}
+						value={price}
+					/>
+				</PanelBody>
+			</InspectorControls>
+			<p
 				key="lms-pricing-tab-price"
 				className="lms-pricing-tabs__price"
-				tagName="p"
 				formattingControl={['bold', 'italic']}
-				value={price}
-				placeholder={__('1000000', textDomain)}
-				onChange={onChangePrice}
-			/>
-			<InnerBlocks template={[['core/list']]} templateLock="all" />
+			>
+				{price}
+			</p>
+			<InnerBlocks template={TEMPLATE} templateLock="all" />
 		</div>
 	);
 };
