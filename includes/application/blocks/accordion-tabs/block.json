@@ -1,0 +1,25 @@
+{
+	"apiVersion": 2,
+	"name": "lms-matic-custom-blocks/accordion-tabs",
+	"title": "Accordion Tabs",
+	"category": "widgets",
+	"icon": "admin-post",
+	"description": "Custom Accordion Tabs made for LMS-MATIC WP Theme",
+	"keywords": ["accordion", "block", "text", "tabs"],
+	"supports": {
+		"html": false,
+		"color": {
+			"gradients": false,
+			"background": true,
+			"icon": true,
+			"text": true
+		}
+	},
+  "attributes": {
+    "opened": {
+      "type": "boolean",
+      "default": "false"
+    }
+  },
+	"textdomain": "accordion-tabs"
+}
