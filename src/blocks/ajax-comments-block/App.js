@@ -16,7 +16,6 @@ const CommentSectionApp = () => {
 			params.append('action', 'lmscx_get_course_comments_section');
 
 			const response = await Axios.post(URLs.ajax_url, params);
-			console.log(response.data);
 		}
 		getComments();
 	}, []);

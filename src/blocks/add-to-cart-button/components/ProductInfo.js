@@ -9,11 +9,8 @@ import AddToCartButton from './AddToCartButton';
 const ProductInfo = ({ dataPosts }) => {
 	const [productInfo, setProductInfo] = useState();
 
-	console.log(dataPosts);
 	const postData = JSON.parse(atob(dataPosts));
 	const selectedProduct = parseInt(postData.selectedProduct) || 0;
-
-	console.log(postData);
 
 	useEffect(() => {
 		const getSummary = async () => {

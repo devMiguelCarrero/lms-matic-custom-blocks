@@ -13,3 +13,4 @@ import './blocks/features/script';
 import './blocks/add-to-cart-button/script';
 import './blocks/ajax-comments-block/script';
 import './blocks/pricing-tables/script';
+import './blocks/accordion-tabs/script';

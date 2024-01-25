@@ -1,0 +1,29 @@
+.lms-accordion-tabs {
+	.block-list-appender {
+		display: none;
+		position: relative;
+		align-self: stretch;
+		width: 100%;
+		border: 1px dashed #222;
+		align-items: center;
+		justify-content: center;
+		min-height: 30px;
+	}
+	.is-selected,
+	&.is-selected {
+		.block-list-appender,
+		& + .block-list-appender {
+			display: flex;
+		}
+	}
+	.__inner-blocks {
+		border: 1px dashed #222;
+		width: 100%;
+		min-height: 70px;
+	}
+	.tab-content {
+		overflow: auto;
+		height: auto;
+		max-height: 100vh !important;
+	}
+}

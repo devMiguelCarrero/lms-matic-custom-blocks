@@ -29,6 +29,7 @@
 		"@wordpress/element": "^4.1.0",
 		"@wordpress/i18n": "^4.2.4",
 		"axios": "^0.27.2",
+		"he": "^1.2.0",
 		"react-slick": "^0.29.0",
 		"slick-carousel": "^1.8.1",
 		"string-strip-html": "^11.0.0"

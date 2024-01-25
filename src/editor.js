@@ -12,3 +12,4 @@ import './blocks/features';
 import './blocks/add-to-cart-button';
 import './blocks/ajax-comments-block';
 import './blocks/pricing-tables';
+import './blocks/accordion-tabs';
