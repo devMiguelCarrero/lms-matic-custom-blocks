@@ -1,25 +1,89 @@
+@import "../../shared/common/variables/colors.scss";
+
 $gap_size: 15px;
+$border-radius: 15px;
+$item_margin: 26px;
+$tab_width: 300px;
 
 .lms-pricing-tabs {
 	position: relative;
-
-	&__list-tabs {
-		display: flex;
-		flex-wrap: wrap;
-		flex-direction: row;
-		justify-content: center;
-		width: 100%;
-		margin-left: auto;
-		margin-right: auto;
-		gap: $gap_size;
-	}
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: $gap_size;
 
 	&__tab {
-		border: solid 1px #000;
-		padding: 15px;
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		max-width: $tab_width;
+		box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+		overflow: hidden;
+		border-radius: $border-radius;
+		transition: transform 0.2s ease-in-out;
+
+		ul {
+			padding: calc(#{$gap_size} * 2) $gap_size;
+			margin: 0;
+			display: flex;
+			flex-direction: column;
+			gap: $item_margin;
+			li {
+				position: relative;
+				list-style-type: none;
+				text-align: center;
+
+				&:not(:last-child) {
+					&::after {
+						content: "";
+						position: absolute;
+						left: 0;
+						bottom: calc(-#{$item_margin} / 2);
+						width: 100%;
+						height: 1px;
+						background-color: $main-color;
+					}
+				}
+			}
+		}
+
+		&:hover {
+			transform: scale(1.05);
+		}
+	}
+
+	&__title {
+		color: $white-color;
+		padding: calc(#{$gap_size} * 2) $gap_size;
+
+		text-align: center;
+
+		.lms-pricing-heading {
+			text-transform: uppercase;
+			font-size: 24px;
+			font-weight: bold;
+		}
+
+		.lms-pricing-description {
+			font-size: 12px;
+		}
+
+		& > * {
+			margin: 0;
+		}
 	}
 
 	&__price {
-		font-size: 20px;
+		text-align: center;
+		font-size: 25px;
+		font-weight: bold;
+		margin: 0;
+	}
+
+	&__payment {
+		position: relative;
+		padding: $gap_size;
 	}
 }
