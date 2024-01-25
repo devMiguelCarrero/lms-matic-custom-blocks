@@ -20,8 +20,6 @@ const ReviewFormApp = () => {
 		event.preventDefault();
 		setLoading(true);
 
-		console.log(reviewOption);
-
 		const params = new URLSearchParams();
 		params.append('action', 'lmscx_update_post_reviews_options');
 		params.append('current_post', PostInfo.current_post);

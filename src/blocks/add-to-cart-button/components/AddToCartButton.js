@@ -23,7 +23,6 @@ const AddToCartButton = ({ product, product_id }) => {
 
 			try {
 				const response = await Axios.post(URLs.ajax_url, params);
-				console.log(response);
 				setAdded(true);
 				setAddedMessage(response.data.message);
 			} catch (e) {

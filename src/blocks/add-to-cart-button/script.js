@@ -36,7 +36,6 @@ function observeDOMChanges() {
 		for (const mutation of mutationsList) {
 			if (mutation.type === 'childList') {
 				mutation.addedNodes.forEach((node) => {
-					console.log();
 					if (
 						node.nodeType === Node.ELEMENT_NODE &&
 						$(node).find('.lms-add-to-cart-button').length > 0
