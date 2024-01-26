@@ -13,6 +13,10 @@
 		"numberOfPosts": {
 			"type": "number",
 			"default": 3
+		},
+		"include": {
+			"type": "array",
+			"default": []
 		}
 	},
 	"textdomain": "testimonial-carousel"

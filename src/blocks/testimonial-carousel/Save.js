@@ -3,7 +3,7 @@ import classNames from 'classnames';
 
 const SavePostCarousel = (props) => {
 	const { attributes, setAttributes } = props;
-	const { className, numberOfPosts } = attributes;
+	const { className, numberOfPosts, include } = attributes;
 
 	const classes = classNames(className, {
 		'lms-post-carousel': true,
@@ -16,7 +16,7 @@ const SavePostCarousel = (props) => {
 	return (
 		<div
 			{...blockProps}
-			data-posts={btoa(JSON.stringify({ numberOfPosts }))}
+			data-posts={btoa(JSON.stringify({ numberOfPosts, include }))}
 		></div>
 	);
 };

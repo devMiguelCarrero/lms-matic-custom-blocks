@@ -10,11 +10,21 @@ const ezPostCarousel = ({ postData }) => {
 	const [posts, setPosts] = useState(null);
 
 	const thePostData = JSON.parse(atob(postData));
+	const { numberOfPosts, include } = thePostData;
 
 	useEffect(async () => {
+		const params = new URLSearchParams();
+		params.append('_embed', true);
+		if (include && include.length > 0) {
+			params.append('include', include.toString(','));
+			params.append('per_page', 100);
+		} else {
+			params.append('per_page', numberOfPosts);
+		}
+
 		try {
 			const response = await Axios.get(
-				`${URLs.main_url}wp-json/wp/v2/testimonial?per_page=${thePostData.numberOfPosts}&_embed`
+				`${URLs.main_url}wp-json/wp/v2/testimonial?${params.toString()}`
 			);
 			setPosts(response.data);
 		} catch (error) {
