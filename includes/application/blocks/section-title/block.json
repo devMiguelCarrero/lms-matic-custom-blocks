@@ -19,6 +19,10 @@
 			"type": "string",
 			"source": "html",
 			"selector": "h2"
+		},
+		"uniqueID": {
+			"type": "string",
+			"default": ""
 		}
 	},
 	"textdomain": "title-section"
