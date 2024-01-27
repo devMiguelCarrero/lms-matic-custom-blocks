@@ -1,4 +1,6 @@
-$background-color: #030a1d;
+@import '../../../shared/common/variables/colors.scss';
+
+$background-color: $third-color;
 $color: #fff;
 $icon-stroke: 1px;
 $button-gap: 40%;
